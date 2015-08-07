@@ -1,0 +1,178 @@
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #222;
+
+$mainColor: #fff;
+$headingColor: #fff;
+
+$mainFontSize: 24px;
+$mainFont: 'Source Code Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #42affa;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-light-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #222;
+	}
+}
+
+.reveal p, h3 {
+	text-align: left;
+	position: relative;
+	width: 1200px;
+	left: -100px;
+}
+
+.reveal .space {
+	width: 300px;
+}
+
+.reveal .next-button {
+	list-style-type: none;
+	position: absolute;
+	top: 670px;
+	left: 850px;
+	color: #ffffff;
+	font-size: 30px;
+}
+
+.reveal {
+	section {
+		p {
+			top: 450px;
+		}
+	}
+	.intro {
+		p {
+			text-align: center;
+			top: 120px;
+			left: -125px;
+		}
+		h3 {
+			top: 100px;
+			left: 350px;
+		}
+	}
+	#traffic {
+		p {
+			width: 1180px;
+			left: -100px;
+		}
+
+	}
+	#outside-lab, #outside-lab2, #inside-lab {
+		p {
+			width: 1200px;
+			left: -100px;
+			top: 420px;
+		}
+	}
+	#inside-lab2, #inside-lab3, #inside-lab4, #inside-lab5, #inside-lab6, #inside-lab7, #inside-lab8 {
+		p {
+			width: 1200px;
+			left: -120px;
+			top: 430px;
+		}
+	}
+	#intro7, #intro8 {
+		p {
+		text-align: left;
+		top: 60px;
+		left: 130px;	
+		}
+	}
+	#intro9 {
+		p {
+			text-align: right;
+			top: 15px;
+			left: -420px;
+		}
+	}
+	#intro10, #intro11, #intro12, #intro13, #intro14 {
+		h3 {
+			top: 100px;
+			left: 200px;
+		}
+	}
+	#apartment1 {
+		p {
+			top: 560px;
+		}
+
+	}
+	.choice {
+		li {
+			top: 460px;
+		}
+	}
+	#call-backup {
+		font-size: 22px;
+		p {
+			top: 430px;
+
+		}
+		li {
+			top: 430px;
+		}
+	}
+	#call-charlie4 {
+		font-size: 22px;
+		p {
+			top: 430px;
+		}
+		li {
+			top: 420px;
+		}
+	}
+	#alley4, #lower2, #lower3, #lower4, #lower5, #lower6, #epilogue2, #epilogue9 {
+		p {
+			top: 420px;
+		}
+	}
+	#outside-lab, #outside-lab2, #inside-lab7, #alley3, #alley4, #dam1, #lower2, #lower9, #epilogue4{
+		font-size: 22px;
+	}
+	#inside-lab, #inside-lab2, #inside-lab3, #inside-lab5, #epilogue9 {
+		font-size: 20px;
+	}
+	#inside-lab4, #lower4, #lower5 {
+		font-size: 18px;
+	}
+}
+
+.reveal li {
+	list-style-type: none;
+	text-align: left;
+	width: 1260px;
+	position: relative;
+	left: -120px;
+	margin: 10px 0;
+}
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
